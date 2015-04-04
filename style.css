@@ -1,0 +1,315 @@
+/* reset -------------------------- */
+html,
+body,
+div,
+li,
+dl,
+dt,
+dd,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+form,
+dfn,
+del,
+p,
+blockquote,
+fieldset,
+input,
+textarea,
+select,
+article,
+aside,
+details,
+figcaption,
+figure,
+header,
+hgroup,
+nav,
+section,
+button,
+canvas,
+video {
+    margin: 0;
+    padding: 0;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+code,
+address,
+caption,
+cite,
+code,
+th,
+dfn,
+del {
+    font-weight: normal;
+    font-style: normal;
+}
+fieldset,
+img {
+    border: none;
+}
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+nav,
+section,
+.clearfix {
+    display: block;
+}
+
+:focus {
+    outline: none;
+}
+
+
+/* tools -------------------------- */
+
+.clearfix:after,
+.wrap:after,
+aside:after,
+section:after,
+article:after,
+.text:after {
+    content: ".";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+    height: 0;
+    font-size: 0;
+}
+
+
+
+/* common -------------------------- */
+html {
+    height: 100%;
+    background: #ffffff;
+}
+body {
+    height: 100%;
+    font: 17px/26px "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #6a6a6a;
+    -webkit-font-smoothing: antialiased;
+    -webkit-backface-visibility: hidden;
+}
+.main {
+    min-height: 100%;
+    overflow: hidden;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.wrap {
+    margin: 0 auto;
+    max-width: 940px;
+    padding: 0 30px;
+}
+
+.ico-db {
+background: url(images/db64.png) no-repeat 0 0;
+}
+.ico-bi {
+background: url(images/bi64.png) no-repeat 0 0;
+}
+.ico-bd {
+    background: url(images/bd64.png) no-repeat 0 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: #324d5b;
+}
+h1, h2, h3 {
+    font-size: 30px;
+    line-height: 40px;
+    margin: 0 0 22px;
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+/* header -------------------------- */
+header {
+    padding: 69px 0;
+}
+header .logo {
+    float: left;
+}
+
+
+
+/* content -------------------------- */
+.simple {
+    text-align: center;
+    padding: 107px 0 95px;
+}
+.simple p {
+    margin: 0 60px 16px;
+}
+.sec1 {
+    background: #60bcf1;
+    color: #ffffff;
+}
+.sec1 .wrap {
+    position: relative;
+    min-height: 634px;
+}
+.sec1-text {
+    width: 460px;
+    height: 634px;
+    display: table-cell;
+    vertical-align: middle;
+    font-size: 18px;
+    line-height: 30px;
+}
+.sec1-text p {
+    padding: 35px 0 0;
+}
+.sec1 .wrap img {
+    position: absolute;
+    bottom: 0;
+    right: 18px;
+}
+.sec1-title {
+    font-size: 55px;
+    line-height: 60px;
+    font-weight: bold;
+}
+.sec2 {
+    margin: -25px 0 60px;
+}
+.sec2-columns {
+    margin: 0 -25px;
+}
+.feature {
+    float: left;
+    width: 33.33%;
+    text-align: center;
+    font-size: 14px;
+    line-height: 21px;
+    padding: 0 25px;
+    margin: 0 0 50px;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.feature h4 {
+    font-size: 18px;
+    line-height: 20px;
+    text-transform: uppercase;
+    color: #2b414d;
+    font-weight: bold;
+    position: relative;
+    margin: 0 0 42px;
+}
+.feature h4:after {
+    position: absolute;
+    bottom: -22px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 22px;
+    height: 2px;
+    background-color: #cbcfd1;
+    content: "";
+    -moz-transition: all 0.15s linear;
+    -o-transition: all 0.15s linear;
+    -webkit-transition: all 0.15s linear;
+    transition: all 0.15s linear;
+}
+.feature:hover h4:after {
+    background-color: #60bcf1;
+}
+.ico-db,
+.ico-bi,
+.ico-bd {
+    width: 64px;
+    height: 64px;
+    margin: 0 auto 32px;
+    
+}
+
+
+.contact {
+    background: #60bcf1;
+    text-align: center;
+    color: #ffffff;
+    text-align: center;
+    padding: 107px 0 113px;
+}
+.contact-title {
+    font-size: 30px;
+    line-height: 40px;
+    margin: 0 0 36px;
+}
+
+
+
+/* Responsive -------------------------- */
+@media (max-width: 959px){
+    .sec1 .wrap {
+        min-height: 0;
+    }
+    .sec1 .wrap img {
+        position: relative;
+        right: auto;
+        bottom: auto;
+        display: block;
+        margin: 0 auto;
+    }
+    .sec1-text {
+        text-align: center;
+        display: block;
+        height: auto;
+        width: auto;
+        padding: 65px 0 48px;
+    }
+    .sec1-title {
+        font-size: 40px;
+        line-height: 50px;
+    }
+
+    
+   
+}
+@media (max-width: 767px){
+    header {
+        text-align: center;
+    }
+    header .logo {
+        float: none;
+        display: inline-block;
+    }
+    
+    .feature {
+        width: 100%;
+    }
+   
+}
+@media (max-width: 479px){
+    body {
+        word-wrap: break-word;
+    }
+    .simple p {
+        margin-left: 0;
+        margin-right: 0;
+    }
+ 
+}
